@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="220dp">
+
+    <TextView
+        android:id="@+id/textViewDialogAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add device"
+        android:textColor="#FD1E01"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNameDialogAdd"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:hint="Device Name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogAdd" />
+
+    <EditText
+        android:id="@+id/editTextOrderDialogAdd"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Order"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameDialogAdd" />
+
+    <Button
+        android:id="@+id/buttonYesDialogAdd"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_dialog"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#FD1E01"
+        app:layout_constraintEnd_toEndOf="@+id/editTextOrderDialogAdd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOrderDialogAdd" />
+
+    <Button
+        android:id="@+id/buttonNoDialogAdd"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_dialog"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#FD1E01"
+        app:layout_constraintStart_toStartOf="@+id/editTextOrderDialogAdd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOrderDialogAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

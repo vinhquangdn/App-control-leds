@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/add_device"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_foreground"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/menu_fragment_device_add_lamp"
+                android:title="Add lamp" />
+
+            <item
+                android:id="@+id/menu_fragment_device_add_fan"
+                android:title="Add fan" />
+        </menu>
+    </item>
+</menu>

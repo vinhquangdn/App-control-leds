@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/roomItemLayout"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/imageViewItemRoom"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/custom_choose_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewItemRoom"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_cancle_dialog"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="#0071A5"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewItemRoom"
+        app:layout_constraintStart_toStartOf="@+id/imageViewItemRoom" />
+
+    <ImageView
+        android:id="@+id/changeIP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_more_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewItemRoom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

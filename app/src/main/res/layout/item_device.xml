@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/device_background_off"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewItemDevice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNameItemDevice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#0071A5"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewItemDevice"
+            app:layout_constraintStart_toStartOf="@+id/imageViewItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewItemDevice" />
+
+        <SeekBar
+            android:id="@+id/seekBarItemDevice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewNameItemDevice"
+            app:layout_constraintStart_toStartOf="@+id/textViewNameItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameItemDevice" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchItemDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/custom_switch"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarItemDevice"
+            app:layout_constraintStart_toStartOf="@+id/seekBarItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarItemDevice"
+            app:track="@drawable/custom_switch_track" />
+
+        <TextView
+            android:id="@+id/textViewTimeItemDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Time (s)"
+            android:textColor="#0071A5"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTimeItemDevice"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Time (s)"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTimeItemDevice"
+            app:layout_constraintStart_toEndOf="@+id/textViewTimeItemDevice" />
+
+        <TextView
+            android:id="@+id/textViewOrderItemDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text="No:"
+            android:textColor="#0071A5"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewTimeItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOnItemDevice" />
+
+        <TextView
+            android:id="@+id/textViewTimerItemDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#0071A5"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTimeItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOnItemDevice" />
+
+        <Button
+            android:id="@+id/buttonOffItemDevice"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_cancle_dialog"
+            android:gravity="center"
+            android:text="Off"
+            android:textColor="#0071A5"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewTimeItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTimeItemDevice" />
+
+        <Button
+            android:id="@+id/buttonOnItemDevice"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_ok_dialog"
+            android:gravity="center"
+            android:text="On"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTimeItemDevice"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTimeItemDevice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
